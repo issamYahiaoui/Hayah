@@ -1,0 +1,297 @@
+
+  <div class="card">
+    <div class="card-block">
+
+      <a id="but1" href="#"  class="btn btn-block btn-danger" data-toggle="modal" data-target="#myModal1" ><span class="glyphicon glyphicon-bullhorn"></span> Demand of blood</a>
+      <a id="but2" href="#" class="btn btn-block btn-primary" data-toggle="modal" data-target="#myModal2"><span class="glyphicon glyphicon-bullhorn"></span> Demand a Donation</a>
+      <a id="but3" href="#" class="btn btn-block btn-info" data-toggle="modal" data-target="#myModal3" ><span class="glyphicon glyphicon-bullhorn"></span> Publish an event </a>
+    
+    </div>
+
+    </div>
+
+
+  <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header" id="hed1">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">Demand of blood</h4>
+        </div>
+
+<div class="container" >
+        <form class="form-group">
+          <fieldset>
+            <!-- Form Name -->
+            <!-- Select Basic -->
+            <div class="form-group">
+              <label class="control-label" for="selectbasic">Blood group</label>
+              <div class="">
+                <select id="selectbasic" name="groupe"  [(ngModel)]="pushsang.groupe"  class="form-control">
+                  <option value="A">A</option>
+                  <option value="B">B</option>
+                  <option value="0">O</option>
+                  <option value="AB">AB</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Multiple Checkboxes -->
+            <div class="form-group">
+              <label class=" control-label" >Rhesus</label>
+              <div class="">
+                <div class="checkbox">
+                  <label for="checkboxes-0">
+                    <input type="checkbox" name="checkboxes" id="checkboxes-0" value="RH+" name="rh" [(ngModel)]="pushsang.rh"  >
+                    RH+
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <!-- Text input-->
+            <div class="form-group">
+              <label class="control-label" for="Adresse">Adress</label>
+              <div class="">
+                <input id="Adresse" name="adress" type="text"  class="form-control input-md" [(ngModel)]="pushsang.adress" required>
+              </div>
+            </div>
+
+            <!-- Multiple Radios (inline) -->
+            <div class="form-group" >
+
+              <label class="col-md-4 control-label" >Emergency</label>
+              <div class="col-md-4">
+                <label class="radio-inline" for="radios-0"  name = emergency  >
+                  <input type="radio" name ="emergency" id="radios-0" value="1" checked="checked" [(ngModel)]="pushsang.emergency">
+                  1
+                </label>
+                <label class="radio-inline" for="radios-1">
+                  <input type="radio" name ="emergency"id="radios-1" value="2" [(ngModel)]="pushsang.emergency">
+                  2
+                </label>
+                <label class="radio-inline" for="radios-2">
+                  <input type="radio" name ="emergency" id="radios-2" value="3" [(ngModel)]="pushsang.emergency">
+                  3
+                </label>
+                <label class="radio-inline" for="radios-3">
+                  <input type="radio" name ="emergency" id="radios-3" value="4" [(ngModel)]="pushsang.emergency">
+                  4
+                </label>
+              </div>
+              </div>
+
+              </fieldset>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="submit" class="btn btn-primary" (click)="submit1()" data-dismiss="modal">Publish</button>
+          </div>
+        </form>
+
+      </div>
+
+
+
+
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header" id="hed2">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" >&times;</span></button>
+          <h4 class="modal-title"  >Demand of Donation </h4>
+        </div>
+        <div class="modal-body">
+
+<div class="container">
+          <form >
+            <fieldset>
+
+              <!-- Form Name -->
+
+
+              <!-- Text input-->
+              <div class="form-group">
+                <label class="col-md-4 control-label" for="textinput">Subject</label>
+                <div class="col-md-4">
+                  <input id="textinput" name="textinput" type="text" placeholder="" class="form-control input-md" required>
+
+                </div>
+              </div>
+
+              <!-- Textarea -->
+              <div class="form-group">
+                <label class=" control-label" for="textarea">Description</label>
+                <div class>
+                  <textarea class="form-control" id="textarea" name="textarea" required></textarea>
+                </div>
+              </div>
+
+              <!-- Text input-->
+              <div class="form-group">
+                <label class="control-label" for="textinput">Amount/Equipement</label>
+                <div class="">
+                  <input id="textinput6" name="textinput" type="text" placeholder="" class="form-control input-md" required>
+
+                </div>
+              </div>
+
+              <!-- Text input-->
+              <div class="form-group">
+                <label class="control-label" for="textinput">Adress</label>
+                <div class="">
+                  <input id="textinput5" name="textinput" type="text" placeholder="" class="form-control input-md" required>
+
+                </div>
+              </div>
+
+              <!-- Text input-->
+              <div class="form-group">
+                <label class="control-label" for="textinput">Email</label>
+                <div class="">
+                  <input id="textinput1" name="textinput" type="text" placeholder="" class="form-control input-md" required>
+
+                </div>
+              </div>
+
+              <!-- Text input-->
+              <div class="form-group">
+                <label class=" control-label" for="textinput">Phone</label>
+                <div class="">
+                  <input id="textinput2" name="textinput" type="text" placeholder="" class="form-control input-md" required>
+
+                </div>
+              </div>
+
+              <!-- Multiple Checkboxes (inline) -->
+              <div class="form-group">
+                <label class="control-label" >Emergency</label>
+                <div class="">
+                  <label class="checkbox-inline" >
+                    <input type="checkbox" name="checkboxes" id="checkboxes-00" value="1">
+                    1
+                  </label>
+                  <label class="checkbox-inline" >
+                    <input type="checkbox" name="checkboxes" id="checkboxes-11" value="2">
+                    2
+                  </label>
+                  <label class="checkbox-inline" >
+                    <input type="checkbox" name="checkboxes" id="checkboxes-22" value="3">
+                    3
+                  </label>
+                  <label class="checkbox-inline" >
+                    <input type="checkbox" name="checkboxes" id="checkboxes-33" value="4">
+                    4
+                  </label>
+                </div>
+              </div>
+
+            </fieldset>
+          </form>
+</div>
+
+
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Publish</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header" id="hed3">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title">Publish an event </h4>
+        </div>
+
+        <div class="modal-body">
+          <form class="form-horizontal">
+            <fieldset>
+
+              <!-- Text input-->
+              <div class="form-group">
+                <label class="control-label" for="textinput">Subject</label>
+                <div class="">
+                  <input id="textinput3" name="textinput" type="text" placeholder="" class="form-control input-md" required>
+
+                </div>
+              </div>
+
+              <!-- Textarea -->
+              <div class="form-group">
+                <label class="control-label" for="textarea">Description</label>
+                <div class="">
+                  <textarea class="form-control" id="textarea88" name="textarea" required></textarea>
+                </div>
+              </div>
+
+              <!-- Text input-->
+              <div class="form-group">
+                <label class="control-label" for="textinput">Date</label>
+                <div class="">
+                  <input id="textinput32" name="textinput" type="text" placeholder="" class="form-control input-md" required>
+                </div>
+              </div>
+
+              <!-- Text input-->
+              <div class="form-group">
+                <label class="control-label" for="textinput">Number of participants</label>
+                <div class="">
+                  <input id="textinput23" name="textinput" type="text" placeholder="" class="form-control input-md" required>
+
+                </div>
+              </div>
+
+              <!-- Text input-->
+              <div class="form-group">
+                <label class=" control-label" for="textinput">Adress</label>
+                <div class="">
+                  <input id="textinput13" name="textinput" type="text" placeholder="" class="form-control input-md" required>
+
+                </div>
+              </div>
+
+              <!-- Text input-->
+              <div class="form-group">
+                <label class="control-label" for="textinput">Email</label>
+                <div class="">
+                  <input id="textinput11" name="textinput" type="text" placeholder="" class="form-control input-md" required>
+
+                </div>
+              </div>
+
+              <!-- Text input-->
+              <div class="form-group">
+                <label class=" control-label" for="textinput">Phone</label>
+                <div class="">
+                  <input id="textinput322" name="textinput" type="text" placeholder="" class="form-control input-md" required>
+
+                </div>
+              </div>
+
+            </fieldset>
+          </form>
+
+        </div>
+        <div class="modal-footer">
+
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Publish</button>
+
+        </div>
+      </div>
+    </div>
+  </div>

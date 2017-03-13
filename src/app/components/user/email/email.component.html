@@ -1,0 +1,18 @@
+
+<div class="container">
+    <div class="form-group">
+      <br> <br> 
+    <a routerLink="/login" id="goback">Go back</a>
+    <h2>Custom Login</h2>
+
+    
+    <form #formData='ngForm' (ngSubmit)="onSubmit(formData)">
+     
+      <input type="text" placeholder="Email address.." (ngModel)="email" name="email" class="txt " required> <br>
+      <input type="password" placeholder="Password" (ngModel)="password" name="password" class="txt " required>
+      <br>
+      <button type="submit" [disabled]="!formData.valid" class="btn btn-primary">Log in</button>
+      <a routerLink="/register" class="alc">Don't have an account?</a>
+  </form>
+</div>
+</div>

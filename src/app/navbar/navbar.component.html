@@ -1,0 +1,52 @@
+
+<style> 
+
+.nav-link:hover{
+
+ color: #ef4089; 
+ border-bottom: 1px solid #ef4089 ; 
+}
+
+</style>
+
+<nav class="navbar navbar-toggleable-md navbar-dark">
+  <div class="container">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav1" aria-controls="navbarNav1" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <a class="navbar-brand" href="#">
+      <img id ="wakil"  src="logo.png" style="width: 65%; height: 65%;">
+    </a>
+
+    <div class="collapse navbar-collapse" id="navbarNav1">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item ">
+          <a class="nav-link toggleButton hv" (click)="onclicked(1)">Demands of blood <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item toggleButton">
+          <a class="nav-link hv" (click)="onclicked(2)"> Donations<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item toggleButton">
+          <a class="nav-link hv" (click)="onclicked(3)">Events</a>
+        </li>
+      </ul>
+
+      <li class="nav-item dropdown btn-group">
+        <a class="nav-link dropdown-toggle hv" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" > {{name.auth.email}}</a>
+        <div class="dropdown-menu dropdown" aria-labelledby="dropdownMenu1">
+          <a class="dropdown-item" (click)="signout()" >Sign Out</a>
+       
+        </div>
+      </li>
+
+    </div>
+
+  </div>
+</nav>
+<script type="text/javascript">
+
+
+</script>
+
+

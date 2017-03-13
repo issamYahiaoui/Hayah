@@ -1,0 +1,53 @@
+<!--<div class="form-container" id="toolbar">
+    <header >
+      <button (click)="logout()" class="basic-btn">Logout</button>
+    </header>
+    <div id="page" >
+      <h2>Hey {{ name.auth.displayName }}!</h2>
+
+      <img src="assets/images/filler.png" />
+    </div>
+    
+</div>-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+  <title>Hayat</title>
+
+</head>
+
+<body>
+
+
+<header>
+
+
+<rb-navbar (change)="onNotify($event)"  ></rb-navbar>
+<br>
+
+</header>
+
+<main>
+
+
+<rb-main-layout [cat]="sampleData" ></rb-main-layout>
+
+
+</main>
+
+
+<footer class="page-footer center-on-small-only">
+
+  <rb-footer></rb-footer>
+
+</footer>
+
+</body>
+
+</html>

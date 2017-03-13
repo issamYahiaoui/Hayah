@@ -1,0 +1,20 @@
+
+<div class="container">  
+    <div class="form-group">
+   <br> <br>
+
+    <span class="error" *ngIf="error">{{ error }}</span>
+   
+           <button (click)="loginFb()" id="fb" class="form-control">Login With Facebook</button><br>
+   
+         <button (click)="loginGoogle()" id="google" class="form-control">Login With Google</button> <br>
+  
+     
+        <button routerLink="/login-email" id="email" class="form-control">Email</button> <br>
+       <style>
+      
+       </style>
+
+  <a routerLink="/register" routerLinkActive="active" class="alc ">No account? <strong>Create one here</strong></a>
+</div>
+</div>
